@@ -18,6 +18,11 @@ function Home({ filter, categoryId }: { filter: string, categoryId: string | nul
         // console.log(homeVideos)
     }, [homeVideos])
 
+    useEffect(() => {
+        console.log("VITE_API_KEY in deployed site:", import.meta.env.VITE_API_KEY);
+    }, [])
+    
+
     return (
 
         <div>
